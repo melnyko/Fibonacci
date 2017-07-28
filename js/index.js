@@ -16,29 +16,29 @@
 
 
 //Recursion
-let n = parseInt(prompt('Enter the number:'));
-function fibonacci(n) {
-    if(n > 1){
-        n = fibonacci(n - 1) + fibonacci(n - 2);
-    }else {
-        n = n;
-    }
-    return n;
-}
-document.write(fibonacci(n));
-
-
-
-//Massif
-// let number = parseInt(prompt('Enter the number:'));
+// let n = parseInt(prompt('Enter the number:'));
 // function fibonacci(n) {
-//     let numb = [1, 1];
-
-//     for (var i = 2; i < n; i++) {
-//         numb[i] = numb[i-1]+ numb[i-2];
+//     if(n > 1){
+//         n = fibonacci(n - 1) + fibonacci(n - 2);
+//     }else {
+//         n = n;
 //     }
-//     return numb[n-1];
+//     return n;
 // }
-// document.write(fibonacci(number));
+// document.write(fibonacci(n));
+
+
+
+//array
+let number = parseInt(prompt('Enter the number:'));
+function fibonacci(n) {
+    let numb = [1, 1];
+
+    for (var i = 2; i < n; i++) {
+        numb[i] = numb[i-1]+ numb[i-2];
+    }
+    return numb[n-1];
+}
+document.write(fibonacci(number));
 
 
