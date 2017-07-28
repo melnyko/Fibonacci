@@ -29,7 +29,7 @@
 
 
 
-//array
+//Array
 let number = parseInt(prompt('Enter the number:'));
 function fibonacci(n) {
     let numb = [1, 1];
